@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 #home::before{
     background: url(../IMG/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center center/cover;
     background-attachment: fixed;

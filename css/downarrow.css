@@ -1,5 +1,7 @@
 /* body{background-color:#000; overflow:hidden;} */
-
+html{
+  scroll-behavior: smooth;
+}
 html body [data-ca3_iconfont="ETmodules"]::before {
     font-family: "ETmodules";
 }

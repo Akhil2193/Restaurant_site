@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Parallax Restaurant | Myparallaxfood.com</title>
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".hamburger").on("click", function () {
+                if ($(".items").hasClass("active")) {
+                    $(".items").removeClass("active");
+                } else {
+                    $(".items").addClass("active");
+                }
+                if ($(".nav-links").hasClass("active")) {
+                    $(".nav-links").removeClass("active");
+                } else {
+                    $(".nav-links").addClass("active");
+                }
+                if ($(".nav-hide-toogle").hasClass("active")) {
+                    $(".nav-hide-toogle").removeClass("active");
+                } else {
+                    $(".nav-hide-toogle").addClass("active");
+                }
+                if ($("#home").hasClass("active")) {
+                    $("#home").removeClass("active");
+                } else {
+                    $("#home").addClass("active");
+                }
+               
+                
+                
+            });
+        });
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul class="nav-links">
+            <li class="hamburger" id="hamburger-12">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </li>
+            <li class="items line"><a href="index.html">Home</a></li>
+            <li class="items"><a href="menu.html">Menu</a></li>
+            <li class="items"><a href="order.html">Order Online</a></li>
+            <li class="items"><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+    <section id="home">
+        <span>
+            <h1 class="nav-hide-toogle">The
+                PArALLAx</h1>
+        </span>
+        <p class="nav-hide-toogle">The only thing we're serious about is food.</p>
+        <ul class="nav-hide-toogle">
+            <li class="nav-hide-toogle"><a href="menu.html">See Menu</a></li>
+            <li class="nav-hide-toogle"> <a href="order.html">Order Online</a></li>
+            <li class="nav-hide-toogle"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reservations</a></li>
+        </ul>
+
+    </section>
+    
+</body>
+
+</html>

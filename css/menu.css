@@ -1,0 +1,122 @@
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 89vh; */
+    font-size: 9.6vw;
+    font-family: 'Ravi Prakash', cursive;
+    height: 89vh;
+    
+    color: #000000ba;
+
+}
+
+.top::before{
+    background: url(../IMG/lily-banse--YHSwy6uqvk-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    content: "";
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.60;
+}
+.Salad::before{
+    background: url(../IMG/pexels-chan-walrus-1059905.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    top: 99.9vh;
+}
+.Maindishes::before{
+    background: url(../IMG/fathul-abrar-ZqREbckCRQA-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.Dessert::before{
+    background: url(../IMG/emile-mbunzama-cLpdEA23Z44-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.Beverages::before{
+    background: url(../IMG/melissa-walker-horn-S7VRvq6sCvA-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.Salad, .Maindishes, .Dessert, .Beverages{
+    display: grid;
+    height: 137vh;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: auto ;
+}
+.Salad::before, .Maindishes::before, .Dessert::before, .Beverages::before{
+    
+    content: "";
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    /* top: 99.9vh; */
+    height: 137vh;
+    opacity: 0.60;
+}
+.content1{
+    font-size: 2.5vw;
+    /* text-align: center; */
+    padding: 4vh 0px;
+    font-weight: bold;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+}
+.menuheading{
+    border: 3px solid rgb(243, 159, 49);
+    border-radius: 4vh;
+    color: rgb(248, 190, 115);
+    padding: 1vh 3vw;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 3vw;
+}
+.inlinegrid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 6vh 8vw;
+    background-color: #00000096;
+    color: white;
+    /* border: 3px solid white; */
+    border-radius: 6vh;
+    width: 80vw;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: 11vh;
+    padding: 6vh 0vw;
+}
+.menuitems{
+    text-align: center;
+    font-size: 2vw;
+    padding: 1vh;
+    font-family: 'Kalam', cursive;
+}
+
+@media all and (max-width:426px) {
+    .nav-hide-menu.active{
+        display: none;
+    }
+    .top.active{
+        height: 0vh;
+        /* display: none; */
+    }
+
+    .top{
+        font-size: 26vw;
+    }
+    .content1{
+        font-size: 24px;
+    }
+    .menuitems{
+        font-size: 16px;
+    }
+}
+@media all and (max-width:1025px) {
+
+}

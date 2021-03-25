@@ -1,0 +1,126 @@
+#home::before{
+    background: url(../IMG/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    opacity: 0.60;
+}
+#home{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 17vh;
+}
+#home h1{
+    font-size: 9.6vw;
+    font-family: 'Ravi Prakash', cursive;
+    color: #000000ba;
+}
+#home p{
+    font-size: 3.5vw;
+    padding: 0px 0px 6vh 0px;;
+    font-weight:bold;
+    color: #000000c4;
+    font-family: 'Akaya Telivigala', cursive;
+}
+#home ul{
+    display: flex;
+    list-style: none;
+    
+}
+#home ul li{
+    margin: 2vh 2vw;
+}
+#home ul li a{
+    text-decoration: none;
+    background-color: #00000096;
+    color: white;
+    border: 0.45vh solid white;
+    padding: 1.5vh 3vw;
+    border-radius: 4vh;
+    font-size: 1.6vw;
+    font-family: 'Merienda', cursive;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+#home ul li a:hover{
+    color: rgb(248, 190, 115);
+    border: 0.45vh solid rgb(248, 190, 115);
+}
+
+@media screen and (max-width:768px){
+    #home h1{
+        font-size: 13.6vw;
+    }
+    #home p{
+        font-size: 5vw;
+    }
+    #home ul li a{
+        font-size: 2vw;
+    }
+}
+@media all and (max-width:1025px){
+    #home h1{
+        font-size: 14vw;
+    }
+    #home p{
+        font-size: 4vw;
+    }
+    #home ul li a{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:426px) {
+    .nav-hide-toogle.active{
+        display: none;
+        
+    }
+    #home::before{
+        height: 125vh;
+    }
+    #home {
+        margin-top: 0px;
+    }
+    #home h1{
+        font-size: 26vw;
+        text-align: center;
+        padding: 0px;
+        width: 100%;
+        /* margin-bottom: 200px; */
+    }
+    #home p{
+        font-size: 34px;
+        text-align: center;
+        padding: 0px 45px;
+    }
+    /* #home::before.active{
+        height: 89vh;
+    } */
+    #home ul{
+        flex-direction: column;
+        
+        width: 100%;
+    }
+    #home ul li{
+        text-align: center;
+        margin-top: 34px;
+    }
+    #home ul li a{
+        font-size: 16px;
+    }
+    #home.active{
+        margin-top: 0vh;
+
+    }
+    #home.active::before{
+        height: 100vh;
+    }
+   
+}

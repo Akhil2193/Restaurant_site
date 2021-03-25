@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | Myparallaxfood.com</title>
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/downarrow.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".hamburger").on("click", function () {
+                if ($(".items").hasClass("active")) {
+                    $(".items").removeClass("active");
+                } else {
+                    $(".items").addClass("active");
+                }
+                if ($(".nav-links").hasClass("active")) {
+                    $(".nav-links").removeClass("active");
+                } else {
+                    $(".nav-links").addClass("active");
+                }
+                if ($(".contact").hasClass("active")) {
+                    $(".contact").removeClass("active");
+                } else {
+                    $(".contact").addClass("active");
+                }
+                if ($(".nav-hide-contact").hasClass("active")) {
+                    $(".nav-hide-contact").removeClass("active");
+                } else {
+                    $(".nav-hide-contact").addClass("active");
+                }
+                if ($(".nav-hide-copyright").hasClass("active")) {
+                    $(".nav-hide-copyright").removeClass("active");
+                } else {
+                    $(".nav-hide-copyright").addClass("active");
+                }
+            });
+        });
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <ul class="nav-links">
+            <li class="hamburger" id="hamburger-12">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </li>
+            <li class="logo">The PArALLAx</li>
+            <li class="items line"><a href="index.html">Home</a></li>
+            <li class="items"><a href="menu.html">Menu</a></li>
+            <li class="items"><a href="order.html">Order Online</a></li>
+            <li class="items"><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <div class="contact"><p class="nav-hide-contact">Contact Us</p></div>
+    <section class="contactgrid nav-hide-contact">
+        
+        <div class="delivery-details">
+            <div class="delivery-details-form">
+                <div class="fullname">
+                    <label class="form-labels" for="fullname">Full Name:    </label>
+                    <input class="input-tag" type="text" id="fullname">
+                    
+                </div>
+                <div class="address">
+                    <label class="form-labels" for="address">Address:    </label>
+                    <input class="input-tag" type="text" id="address">
+                </div>
+                <div class="phone-number">
+                    <label class="form-labels" for="phone-number">Phone Number:    </label>
+                    <input class="input-tag" type="text" id="phone-number">
+                </div>
+                <div class="email">
+                    <label class="form-labels" for="email">Email:    </label>
+                    <input class="input-tag" type="email" id="email">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 9.6vw;
+    font-family: 'Ravi Prakash', cursive;
+    height: 89vh;
+    color: #000000ba;
+}
+.order::before{
+    background: url(../IMG/pexels-pixabay-248444.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    content: "";
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.60;
+}
+.content1{
+    font-size: 2.5vw;
+    /* text-align: center; */
+    padding: 4vh 0px;
+    font-weight: bold;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+}
+.menuheading{
+    border: 3px solid rgb(243, 159, 49);
+    border-radius: 4vh;
+    color: rgb(248, 190, 115);
+    padding: 1vh 3vw;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 3vw;
+}
+.delivery-details{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    height: 100vh;
+}
+.delivery-details::before{
+    content: "";
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    /* top: 99.9vh; */
+    height: 137vh;
+    opacity: 0.60;
+}
+.delivery-details::before{
+    background: url(../IMG/visualsofdana-bwWVElrTBcI-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    top: 99.9vh;
+}
+.delivery-details-form{
+    display: grid;
+    /* grid-template-columns:repeat(auto-fit, minmax(300px,1; */
+    grid-gap: 6vh 8vw;
+    text-align: left;
+    background-color: #00000096;
+    color: white;
+    /* border: 3px solid white; */
+    border-radius: 6vh;
+    width: 80vw;
+    font-size: 1.5rem;
+    /* justify-content: center; */
+    margin-top: 11vh;
+    padding: 6vh 0vw;
+}
+.form-labels{
+    /* text-align: center; */
+    font-size: 2vw;
+    padding: 2vw;
+    font-family: 'Kalam', cursive;
+}
+.input-tag{
+    height: 6vh;
+    width: 50vw;
+    position: absolute;
+    right: 21vw;
+    border-radius: 3vh;
+    opacity: 0.6;
+}
+@media all and (max-width:426px) {
+    .content1{
+        font-size: 24px;
+    }
+    .form-labels{
+        font-size: 16px;
+        display: block;
+    }
+    .delivery-details-form{
+        height: 72vh;
+    }
+    .input-tag{
+        left: 13vw;
+        width: 72vw;
+    }
+    .order{
+        font-size: 23vw;
+        text-align: center;
+    }
+    .nav-hide-order.active{
+        display: none;
+    }
+    .order.active{
+        height: 0px;
+    }
+}
